@@ -12,15 +12,14 @@ Convert Head Motions from the Hamilton Quaternion to Euler Angles.
 ### Usage
 Place results folder to the project root. The output will be written to heads folder.
 Format;
-- quaternion-to-euler
-  - converter.py
-  - results
-    - uid_id
-      - test_id
-        - VideoName
-          - HeadMotionLogs.txt
-  - heads
-    - VideoName_uid
+- quaternion-to-euler.py
+- results
+  - uid_id
+    - test_id
+      - VideoName
+        - HeadMotionLogs.txt
+- heads
+  - VideoName_uid
 
 ### Output
 There are head motions for different videos. 
@@ -32,3 +31,21 @@ So, some head motion files can be missing.
 For instance;
 rhino_0, rhino_3, rhino_5, rhino_8, ...
 rhino_2, rhino_4, rhino_5, rhino_6, rhino_7, ... are missing
+
+## EH Task Dataset Converter
+The data is 8 columns: timestamp, frame, head_x, heady, gaze_x_unit, gaze_y_unit, gaze_x, gaze_y. The script splits the head and gaze data to separate files. 
+EHTask: Recognizing User Tasks from Eye and Head Movements in Immersive Virtual Reality: https://ieeexplore.ieee.org/document/9664291
+
+### Usage
+Place results folder to the project root. The output will be written to eh_heads, gaze_unit, gaze_coor folders.
+Format;
+- eh-dataset.py
+- RawData
+  - User_X_Video_Y_Task_Z.txt
+- eh_heads
+  - User_X_Video_Y_Task_Z
+- gaze
+  - unit
+    - User_X_Video_Y_Task_Z
+  - coor
+    - User_X_Video_Y_Task_Z

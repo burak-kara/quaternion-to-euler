@@ -1,4 +1,5 @@
 .idea
 heads
+gaze
 results
-dataset_converter.py
+RawData
