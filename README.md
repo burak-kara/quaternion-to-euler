@@ -37,7 +37,7 @@ The data is 8 columns: timestamp, frame, head_x, heady, gaze_x_unit, gaze_y_unit
 EHTask: Recognizing User Tasks from Eye and Head Movements in Immersive Virtual Reality: https://ieeexplore.ieee.org/document/9664291
 
 ### Usage
-Place results folder to the project root. The output will be written to eh_heads, gaze_unit, gaze_coor folders.
+Place RawData folder to the project root. The output will be written to eh_heads, gaze_unit, gaze_coor folders.
 Format;
 - eh-dataset.py
 - RawData
